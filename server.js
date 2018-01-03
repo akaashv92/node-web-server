@@ -53,7 +53,12 @@ app.get('/about' , (req,res) => {
   res.render('about.hbs', {
     pageName : 'About Page'
   });
-})
+});
+app.get('/projects' , (req,res) => {
+  res.render('projects.hbs', {
+    pageName : 'Portfolio page'
+  });
+});
 
 app.get('/home', (req,res) => {
   res.send('Home Page');
